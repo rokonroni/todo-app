@@ -12,6 +12,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    
+    <main>
+      <h1 class="text-center text-5xl font-semibold italic mt-8">
+        Todo list 😍
+      </h1>
+      <div class="text-center mt-16 flex items-center justify-center">
+        <input
+          type="text"
+          id="task-add"
+          class="border border-green-400 text-2xl p-3 focus:outline-green-400 rounded-lg"
+        />
+        <button
+          id="add-task-btn"
+          class="btn btn-primary text-xl ml-3 bg-green-400 text-white border-0 hover:bg-green-600"
+        >
+          Add task
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <table  class="table w-3/4 border mx-auto mt-5 text-center">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>Serial</th>
+              <th>Task Name</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="table">
+            <!-- row 1 -->
+            <!-- <tr>
+              <th>1</th>
+              <td>Codding</td>
+              <td>
+                <button class="done-btn btn bg-green-500 hover:bg-green-700 px-3 text-white font-semibold">Done</button>
+                <button class="delete-btn btn bg-red-500 hover:bg-red-700 px-3 text-white font-semibold">Delete</button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <div class="text-right w-4/5 mt-6">
+        <button id="clear-all"
+          class="btn bg-red-500 hover:bg-red-700 px-3 text-white font-semibold"
+        >
+          Clear All
+        </button>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>
